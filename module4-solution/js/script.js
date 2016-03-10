@@ -116,7 +116,7 @@ console.log('b');
       // it into the home html snippet.
       // 
       console.log(homeHtml);
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "{{" + chosenCategoryShortName + "}}");
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'" + chosenCategoryShortName + "'");
       
       console.log(homeHtmlToInsertIntoMainPage);
 
