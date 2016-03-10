@@ -123,7 +123,7 @@ console.log('b');
       // of how to do that. 
       // ....
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
-      
+      console.log('kraj');
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
@@ -151,6 +151,7 @@ dc.loadMenuCategories = function () {
 // Load the menu items view
 // 'categoryShort' is a short_name for a category
 dc.loadMenuItems = function (categoryShort) {
+  console.log("evo ga: " + categoryShort);
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     menuItemsUrl + categoryShort,
